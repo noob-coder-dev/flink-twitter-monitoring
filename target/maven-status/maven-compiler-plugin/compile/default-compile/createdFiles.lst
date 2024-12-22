@@ -1,0 +1,17 @@
+com/yeah/utility/DataServer.class
+com/miguno/avro/twitter.class
+com/miguno/avro/Media.class
+com/miguno/avro/GeoLocation$Builder.class
+com/miguno/avro/twitter$Builder.class
+com/yeah/flink/app/AvroStreamFormat$AvroReader.class
+com/miguno/avro/Media$Builder.class
+com/miguno/avro/GeoLocation.class
+com/yeah/utility/FileGenerator.class
+com/miguno/avro/UserMetadata.class
+com/yeah/flink/app/AvroStreamFormat$FSDataSeekableInput.class
+com/yeah/utility/DataClient.class
+com/yeah/flink/app/AvroSimpleStreamFormat.class
+com/yeah/flink/app/AvroSimpleStreamFormat$Reader.class
+com/yeah/flink/app/AvroStreamFormat.class
+com/yeah/flink/app/TwitterAvroProcessor.class
+com/miguno/avro/UserMetadata$Builder.class

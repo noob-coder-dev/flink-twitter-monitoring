@@ -1,0 +1,108 @@
+{
+  "type": "record",
+  "name": "twitter",
+  "namespace": "com.miguno.avro",
+  "fields": [
+    {
+      "name": "tweet_id",
+      "type": "string",
+      "doc": "Unique identifier for the tweet"
+    },
+    {
+      "name": "username",
+      "type": "string",
+      "doc": "Name of the user account on Twitter.com"
+    },
+    {
+      "name": "display_name",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Display name of the user (can be null if not set)"
+    },
+    {
+      "name": "tweet",
+      "type": "string",
+      "doc": "The content of the user's Twitter message"
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "doc": "Unix epoch time in milliseconds when the tweet was created"
+    },
+    {
+      "name": "geo_location",
+      "type": ["null", {
+        "type": "record",
+        "name": "GeoLocation",
+        "fields": [
+          { "name": "latitude", "type": "double", "doc": "Latitude of the tweet location" },
+          { "name": "longitude", "type": "double", "doc": "Longitude of the tweet location" }
+        ]
+      }],
+      "default": null,
+      "doc": "Geographical location where the tweet was posted, if available"
+    },
+    {
+      "name": "hashtags",
+      "type": { "type": "array", "items": "string" },
+      "doc": "List of hashtags included in the tweet"
+    },
+    {
+      "name": "mentions",
+      "type": { "type": "array", "items": "string" },
+      "doc": "List of usernames mentioned in the tweet"
+    },
+    {
+      "name": "likes",
+      "type": "int",
+      "doc": "Number of likes the tweet has received"
+    },
+    {
+      "name": "retweets",
+      "type": "int",
+      "doc": "Number of retweets"
+    },
+    {
+      "name": "is_retweet",
+      "type": "boolean",
+      "doc": "Whether this tweet is a retweet"
+    },
+    {
+      "name": "media_attachments",
+      "type": ["null", {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "Media",
+          "fields": [
+            { "name": "media_type", "type": "string", "doc": "Type of media (image, video, gif, etc.)" },
+            { "name": "url", "type": "string", "doc": "URL of the media" }
+          ]
+        }
+      }],
+      "default": null,
+      "doc": "Attachments such as images, videos, or gifs included in the tweet"
+    },
+    {
+      "name": "reply_to_tweet_id",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "If the tweet is a reply, this is the ID of the parent tweet"
+    },
+    {
+      "name": "user_metadata",
+      "type": {
+        "type": "record",
+        "name": "UserMetadata",
+        "fields": [
+          { "name": "followers_count", "type": "int", "doc": "Number of followers the user has" },
+          { "name": "following_count", "type": "int", "doc": "Number of accounts the user is following" },
+          { "name": "account_created", "type": "long", "doc": "Unix epoch time in milliseconds when the account was created" },
+          { "name": "verified", "type": "boolean", "doc": "Whether the user account is verified" }
+        ]
+      },
+      "doc": "Metadata about the user who posted the tweet"
+    }
+  ],
+  "doc": "An enhanced schema for storing Twitter-like messages with additional metadata and attributes"
+}

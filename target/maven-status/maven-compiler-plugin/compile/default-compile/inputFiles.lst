@@ -1,0 +1,10 @@
+/Users/manojitroy/flink-practice/flink-word-count/src/main/java/com/yeah/utility/FileGenerator.java
+/Users/manojitroy/flink-practice/flink-word-count/src/main/java/com/yeah/utility/DataServer.java
+/Users/manojitroy/flink-practice/flink-word-count/target/generated-sources/com/miguno/avro/twitter.java
+/Users/manojitroy/flink-practice/flink-word-count/src/main/java/com/yeah/flink/app/AvroStreamFormat.java
+/Users/manojitroy/flink-practice/flink-word-count/target/generated-sources/com/miguno/avro/Media.java
+/Users/manojitroy/flink-practice/flink-word-count/src/main/java/com/yeah/utility/DataClient.java
+/Users/manojitroy/flink-practice/flink-word-count/target/generated-sources/com/miguno/avro/UserMetadata.java
+/Users/manojitroy/flink-practice/flink-word-count/src/main/java/com/yeah/flink/app/TwitterAvroProcessor.java
+/Users/manojitroy/flink-practice/flink-word-count/target/generated-sources/com/miguno/avro/GeoLocation.java
+/Users/manojitroy/flink-practice/flink-word-count/src/main/java/com/yeah/flink/app/AvroSimpleStreamFormat.java
